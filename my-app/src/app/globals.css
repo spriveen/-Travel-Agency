@@ -1,2 +1,27 @@
 @import "tailwindcss";
 
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-sora), sans-serif;
+  }
+}
+
+:root {
+  --heading-color: #193555;
+  --text-color: #697e8a;
+  --black: #000;
+  --white: #fff; /* fixed */
+  --btn-color: #193555;
+}
+
+/* ✅ Correct utility */
+@layer utilities {
+  .font-unbounded {
+    font-family: var(--font-unbounded), sans-serif;
+  }
+}

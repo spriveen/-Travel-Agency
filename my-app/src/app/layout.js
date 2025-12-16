@@ -1,6 +1,14 @@
 import { Unbounded, Sora } from "next/font/google";
 import "./globals.css";
 
+// FOMNT AWESOME CSS
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
+// REMIX ICON CSS
+import "remixicon/fonts/remixicon.css";
+import Nav from "./Components/Nav";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -25,6 +33,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${sora.variable} ${unbounded.variable} antialiased`}
       >
+        <Nav />
         {children}
       </body>
     </html>
