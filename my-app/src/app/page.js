@@ -1,11 +1,10 @@
 import React from 'react'
+import Index from './Index/page'
 
-const page = () => {
+export default function Home() {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Index />
+    </>
   )
 }
-
-export default page
